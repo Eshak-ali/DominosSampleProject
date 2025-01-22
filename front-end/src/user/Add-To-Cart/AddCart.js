@@ -222,7 +222,7 @@ const AddCart = () => {
                 <section className="col-2 col-md-3">
                   <span>{each.price}</span>
                 </section>
-                <section className="col-3 col-md-3 quantity">
+                <section className="col-3 col-md-3 quantity px-2">
                   <button
                     className="btn "
                     onClick={() => dispatch(removeFromCart(each))}

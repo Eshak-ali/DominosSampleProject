@@ -225,14 +225,14 @@ const AddCart = () => {
                 <section className="col-2 col-md-3">
                   <span>{each.price}</span>
                 </section>
-                <section className="col-3 col-md-3 quantity px-4">
+                <section className="col-3 col-md-3 quantity px-5">
                   <button
                     className="btn "
                     onClick={() => dispatch(removeFromCart(each))}
                   >
                     <BsDash />
                   </button>
-                  <h5>{each.quantity}</h5>
+                  <span>{each.quantity}</span>
                   <button className="btn " onClick={() => AddExtra(each)}>
                     <BsPlus />
                   </button>

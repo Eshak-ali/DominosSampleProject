@@ -116,7 +116,7 @@ const AdminNavbar = () => {
               </Link>
             </ul>
             <div>
-              <button className="btn btn-danger" id="log">
+              <button className="btn btn-danger"  id="log">
                 <Link to="/" className="nav-link">
                   Logout
                 </Link>

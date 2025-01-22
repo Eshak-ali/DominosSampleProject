@@ -24,7 +24,7 @@ const Ads = () => {
                   className="d-block w-100"
                   src={video}
                   autoPlay
-                  loop
+                  
                   playsInline
                 ></video>
               </div>

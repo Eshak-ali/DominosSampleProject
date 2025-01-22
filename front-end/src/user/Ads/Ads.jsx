@@ -11,7 +11,7 @@ const Ads = () => {
         id="videoCarousel"
         className="carousel slide mt-3"
         data-bs-ride="carousel"
-        data-bs-interval="10000" // Automatically moves to the next slide after 25 seconds
+        data-bs-interval="10000" // Automatically moves to the next slide after 10 seconds
       >
         <div className="carousel-inner video">
           {videos.map((video, index) => (

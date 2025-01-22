@@ -29,10 +29,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   border-radius: 15px;
   border: 1px solid black;
   padding: 1px;
-  width: 15vw !important;
+  width: 17vw !important;
   background-color: grey;
   color: lightyellow;
 }

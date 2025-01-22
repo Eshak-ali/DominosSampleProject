@@ -164,7 +164,7 @@ const AddCart = () => {
           <PiPizzaDuotone />
         </span>
       </h1>
-      <div className="order-type">
+      <div className="order-type mx-3">
         {location !== null &&
         location !== "Dine-in" &&
         location !== "Takeaway" ? (
@@ -175,7 +175,11 @@ const AddCart = () => {
                 <IoMdArrowDropdown />
               </span>
             </h4>
-            <span className="address mx-auto">Address:<br/>{location}</span>
+            <span className="address mx-auto">
+              Address:
+              <br />
+              {location}
+            </span>
           </>
         ) : location === "Takeaway" ? (
           <h4>
@@ -196,6 +200,7 @@ const AddCart = () => {
         )}
       </div>
       <div className="product-box">
+        <hr />
         {order.items.length === 0 ? (
           <h2 className="my-5">Your Cart Is Empty</h2>
         ) : (
@@ -209,10 +214,10 @@ const AddCart = () => {
                     alt={each.name}
                   />
                   <img
-                    className=" d-block d-md-none w-25"
+                    className=" d-block d-md-none"
                     src={each.type === "Veg" ? Veg : Nonveg}
                   />
-                  <span className="m-0 fs-5">{each.name}</span>
+                  <span className="m-0">{each.name}</span>
                 </section>
                 <section className="col-2 col-md-3">
                   <span>{each.price}</span>
@@ -234,6 +239,7 @@ const AddCart = () => {
                 </section>
               </div>
             ))}
+            <hr />
             <div className="text-end total-price mt-4 gap-4 gap-md-2">
               <span>
                 <Link to="/user/menu" className="text-dark nav-link">

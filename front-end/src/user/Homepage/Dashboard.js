@@ -145,7 +145,9 @@ const Dashboard = () => {
           </Link>
         </ul>
       </div>
-      <Ads />
+      <section>
+        <Ads />
+      </section>
       <div className="categories mt-2">
         <h5 className="text-start text-secondary">What are you craving for?</h5>
         <div className="categories-img">
@@ -207,7 +209,8 @@ const Dashboard = () => {
             id="carouselExample"
             class="carousel slide"
             data-bs-ride="carousel"
-            data-bs-interval="1000"
+            data-bs-interval="2000"
+            data-bs-touch="true"
           >
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -228,7 +231,6 @@ const Dashboard = () => {
             </div>
           </div>
         </section>
-      
       </div>
 
       {/* side-bar */}

@@ -44,7 +44,7 @@
     flex-direction: column;
     transition: all 0.5s linear;
     cursor: pointer;
-    width: 80px;
+    width: 150px;
   }
   .categories-img span img {
     width: 100%;

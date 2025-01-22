@@ -158,7 +158,7 @@ const AddCart = () => {
 
   return (
     <div className="container-sm py-5 px-0">
-      <h1 className="text-center  ">
+      <h1 className="text-center  mt-5 mt-sm-0">
         Your order
         <span className="text-warning">
           <PiPizzaDuotone />

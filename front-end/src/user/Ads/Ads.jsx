@@ -19,17 +19,36 @@ const Ads = () => {
               className={`carousel-item ${index === 0 ? "active" : ""}`}
               key={index}
             >
-             <div >
-             <video
-                className="d-block w-100"
-                src={video}
-                autoPlay
-                playsInline
-              ></video>
-                </div>
+              <div>
+                <video
+                  className="d-block w-100"
+                  src={video}
+                  autoPlay
+                  loop
+                  playsInline
+                ></video>
+              </div>
             </div>
           ))}
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#videoCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#videoCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   );

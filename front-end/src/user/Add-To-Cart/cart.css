@@ -29,9 +29,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:5px;
+  gap: 5px;
+  font-size: 10px;
   border-radius: 15px;
-  border: 1px solid black;
+  box-shadow: inset 1px 1px 1px 1px black;
   width: 17vw !important;
   background-color: grey;
   color: lightyellow;

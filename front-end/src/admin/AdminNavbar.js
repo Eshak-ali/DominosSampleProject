@@ -33,7 +33,43 @@ const AdminNavbar = () => {
       </section>
       <div className=" row  p-0 m-0 dashboard">
         <section
-          className="col-5 col-sm-2 sidebar d-none d-md-flex"
+          className="col-5  sidebar d-none d-md-flex"
+        >
+          <h2>
+            <BsPersonBadge />
+            Admin
+          </h2>
+          <ul className="navbar-nav">
+            <Link to="/admin/add" className="nav-link">
+              <li>
+                Add Items
+                <span className="d-md-none" onClick={handlesidebar}></span>
+              </li>
+            </Link>
+            <Link to="/admin" className="nav-link">
+              <li>
+                List Items
+                <span className="d-md-none" onClick={handlesidebar}></span>
+              </li>
+            </Link>
+            <Link to="/admin/order" className="nav-link">
+              <li>
+                Order Details
+                <span className="d-md-none" onClick={handlesidebar}></span>
+              </li>
+            </Link>
+          </ul>
+          <div>
+            <button className="btn btn-danger d-none" id="log">
+              <Link to="/" className="nav-link">
+                Logout
+              </Link>
+              <LuLogOut />
+            </button>
+          </div>
+        </section>
+        <section
+          className="col-5 col-sm-5 sidebar d-none d-md-flex"
           id="sidebar"
         >
           <h2>

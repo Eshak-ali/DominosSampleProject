@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: scroll;
+}
+
+.carousel {
+  touch-action: pan-y; /* Enables vertical scroll with carousel swipe */
 }
 
 code {

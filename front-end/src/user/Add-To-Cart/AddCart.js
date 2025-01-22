@@ -206,7 +206,10 @@ const AddCart = () => {
         ) : (
           <>
             {order.items?.map((each) => (
-              <div className="product col-12 text-center mt-4 mx-2" key={each.id}>
+              <div
+                className="product col-12 text-center mt-4 mx-2"
+                key={each.id}
+              >
                 <section className="col-5 col-md-3 product-name">
                   <img
                     className="mx-2 d-none d-md-block"
@@ -237,9 +240,10 @@ const AddCart = () => {
                 <section className="col-2 col-md-3">
                   <span>{each.totalPrice}</span>
                 </section>
+                <hr />
               </div>
             ))}
-            <hr />
+
             <div className="text-end total-price mt-5 gap-4 gap-md-2">
               <span>
                 <Link to="/user/menu" className="text-dark nav-link">

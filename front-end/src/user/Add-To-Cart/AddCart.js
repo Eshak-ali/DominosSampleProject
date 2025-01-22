@@ -253,7 +253,7 @@ const AddCart = () => {
           </>
         )}
       </div>
-      <h4 className="mt-5">Complete Your Meal</h4>
+      <h4 className="mt-5 mx-2">Complete Your Meal</h4>
       <br />
       <div className="complete-order">
         {randompizza.map((each) => (

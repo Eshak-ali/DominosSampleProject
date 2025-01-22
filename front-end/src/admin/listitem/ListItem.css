@@ -1,0 +1,13 @@
+.update-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .table-container{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    height: 70vh; /* Adds horizontal scrolling if content overflows */
+    overflow-y: scroll;
+  }
+  

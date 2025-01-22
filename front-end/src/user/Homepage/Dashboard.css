@@ -1,0 +1,130 @@
+.dashboard {
+    height: 85vh;
+  }
+  
+  .place-tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px !important;
+    margin: 40px 0px 0px 10px;
+    box-shadow: inset 0px 0.2px 1px black;
+    border-radius: 10px;
+  }
+  
+  .place-tab li {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 2%);
+    border-radius: 2px;
+    padding: 5px;
+    width: 40%;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    font-size: 14px;
+  }
+  
+  .place-tab li:hover {
+    background-color: black;
+    color: white;
+    box-shadow: inset 1px 8px 5px gray;
+    border-radius: 10px;
+  }
+  
+  .categories-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .categories-img span {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s linear;
+    cursor: pointer;
+    width: 80px;
+  }
+  .categories-img span img {
+    width: 100%;
+  }
+  
+  .categories-img span:hover {
+    transform: translateY(20px);
+  }
+  
+  .user-details {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    background-color: rgba(146, 224, 255, 50%);
+  }
+  
+  .user-details h3 {
+    background-color: darkblue;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .user-details button {
+    padding-right: 350px;
+  }
+  .user-details div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 32px;
+    list-style-type: none;
+  }
+  
+  .menu-item li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+  }
+  
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .banner img {
+    width: 40vw;
+    border-radius: 50px;
+  }
+  
+  .carousel-item img {
+    
+    height: 50vh !important;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  

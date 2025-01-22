@@ -1,0 +1,49 @@
+.Brand img {
+    width: 50px;
+  }
+  .list {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px;
+    box-shadow:  0px 1px 3px 2px black;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .compnay-brand {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-fixed {
+    position: fixed !important;
+    top: 0;
+    z-index: 2;
+    height: 8vh !important;
+  }
+  
+  .add-cart {
+    /* position: fixed; */
+    border-radius: 10px;
+    bottom: 20%;
+    right: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .cart {
+    background-color:darkslategrey;
+    border: 1px solid white;
+    width: 30px;
+    height: 20px;
+    border-radius: 15px;
+    font-size: 12px;
+  }
+  

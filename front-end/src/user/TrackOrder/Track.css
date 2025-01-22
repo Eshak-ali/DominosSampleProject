@@ -1,0 +1,68 @@
+.order-box {
+    width: 70vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .status {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .disable {
+    color: grey;
+  }
+  
+  .cancelled {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .pending {
+    color: orangered;
+    font-weight: bold;
+  }
+  
+  .shipped {
+    color: darkblue;
+    font-weight: bold;
+  }
+  
+  .delivered {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .order-details {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .pizza {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+  }
+  
+  .track-order{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      
+  }
+  
+  .box{
+      background-color: rgba(173, 216, 230,50%);
+  }

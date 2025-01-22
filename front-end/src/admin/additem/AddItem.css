@@ -1,0 +1,13 @@
+.back-box{
+    border-radius: 15px;
+    min-width: 60vw;
+    background-color: rgba(255, 255, 255,90%);
+    min-height: 90vh;
+    box-shadow:inset 2px 1px 10px  black;
+    padding: 10px;
+}
+.input-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

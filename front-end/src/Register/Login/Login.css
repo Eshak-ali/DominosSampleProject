@@ -1,0 +1,125 @@
+.login {
+    background-image: url("../../images/backgorund/login.jpeg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-box {
+    width: 45vw;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .login-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .input-wrapper {
+    position: relative;
+    margin-top: 20px;
+    height: 40vh;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+  .input-wrapper input {
+    width: 40vw;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid darkblue;
+    outline: none;
+    transition: all 0.2s ease;
+    border-radius: 10px;
+    padding-left: 15px;
+  }
+  
+  .number-label {
+    position: absolute;
+    top: 3vh;
+    left: 12px;
+    font-size: 15px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    background-color: white;
+    z-index: 1;
+  }
+  
+  .name-label {
+    position: absolute;
+    top: 15vh;
+    left: 32px;
+    font-size: 18px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    background-color: white;
+  }
+  
+  .password-label {
+    position: absolute;
+    top: 25vh;
+    left: 32px;
+    font-size: 18px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    background-color: white;
+  }
+  
+  .place-label {
+    position: absolute;
+    top: 6.3vh;
+    left: 12px;
+    font-size: 18px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    font-weight: bold;
+    z-index: 1;
+  }
+  
+  @media (max-width: 520px) {
+    .login-box {
+      width: 100vw;
+      height: 100vh;
+      color: white;
+      border-radius: 10px;
+      background-image: url("../../images/backgorund/loginmobile.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    .number-label {
+      background-color: transparent;
+    }
+    .name-label {
+      background-color: transparent;
+      top: 124px;
+    }
+    .password-label {
+      background-color: transparent;
+    }
+    .place-label {
+      top: 5.8vh;
+    }
+    .input-wrapper input {
+      width: 90vw;
+    }
+  }
+  
+  .show {
+    display: none;
+  }
+  
+  .number-input {
+    position: absolute;
+    top: 35px;
+    z-index: 0;
+  }
+  

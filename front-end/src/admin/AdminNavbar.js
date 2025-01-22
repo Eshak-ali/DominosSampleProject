@@ -7,13 +7,6 @@ import { Link, Outlet } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
 const AdminNavbar = () => {
-  const handlesidebar = () => {
-    const menu = document.getElementById("sidebar");
-    const logout = document.getElementById("log");
-    menu.classList.toggle("sidebar-mobile");
-    menu.classList.toggle("d-none");
-    logout.classList.toggle("d-none");
-  };
   return (
     <div className="col-12 container-fluid p-0">
       <section className="col-12 navbar bg-primary">
@@ -21,7 +14,12 @@ const AdminNavbar = () => {
           <img src={logo} alt="logo" />
           DUmino's Pizza
         </h3>
-        <h2 className="d-md-none" onClick={handlesidebar}>
+        <h2
+          className="d-md-none"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#staticBackdrop"
+          aria-controls="staticBackdrop"
+        >
           <FaBars />
         </h2>
         <Link to="/" className="nav-link">
@@ -32,9 +30,7 @@ const AdminNavbar = () => {
         </Link>
       </section>
       <div className=" row  p-0 m-0 dashboard">
-        <section
-          className="col-5  sidebar d-none d-md-flex"
-        >
+        <section className="col-5  sidebar d-none d-md-flex">
           <h2>
             <BsPersonBadge />
             Admin
@@ -68,46 +64,68 @@ const AdminNavbar = () => {
             </button>
           </div>
         </section>
-        <section
-          className="col-5 col-sm-5 sidebar d-none d-md-flex"
-          id="sidebar"
-        >
-          <h2>
-            <BsPersonBadge />
-            Admin
-          </h2>
-          <ul className="navbar-nav">
-            <Link to="/admin/add" className="nav-link">
-              <li>
-                Add Items
-                <span className="d-md-none" onClick={handlesidebar}></span>
-              </li>
-            </Link>
-            <Link to="/admin" className="nav-link">
-              <li>
-                List Items
-                <span className="d-md-none" onClick={handlesidebar}></span>
-              </li>
-            </Link>
-            <Link to="/admin/order" className="nav-link">
-              <li>
-                Order Details
-                <span className="d-md-none" onClick={handlesidebar}></span>
-              </li>
-            </Link>
-          </ul>
-          <div>
-            <button className="btn btn-danger d-none" id="log">
-              <Link to="/" className="nav-link">
-                Logout
-              </Link>
-              <LuLogOut />
-            </button>
-          </div>
-        </section>
+
         <section className="col-12 col-sm-10 content">
           <Outlet />
         </section>
+      </div>
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-backdrop="static"
+        tabindex="-1"
+        id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="staticBackdropLabel">
+            Offcanvas
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <section
+            className="col-5 col-sm-5 sidebar d-none d-md-flex"
+            id="sidebar"
+          >
+            <h2>
+              <BsPersonBadge />
+              Admin
+            </h2>
+            <ul className="navbar-nav">
+              <Link to="/admin/add" className="nav-link">
+                <li>
+                  Add Items
+                  <span className="d-md-none" onClick={handlesidebar}></span>
+                </li>
+              </Link>
+              <Link to="/admin" className="nav-link">
+                <li>
+                  List Items
+                  <span className="d-md-none" onClick={handlesidebar}></span>
+                </li>
+              </Link>
+              <Link to="/admin/order" className="nav-link">
+                <li>
+                  Order Details
+                  <span className="d-md-none" onClick={handlesidebar}></span>
+                </li>
+              </Link>
+            </ul>
+            <div>
+              <button className="btn btn-danger" id="log">
+                <Link to="/" className="nav-link">
+                  Logout
+                </Link>
+                <LuLogOut />
+              </button>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   );

@@ -31,7 +31,10 @@ const CheeseBurst = () => {
         className="position-fixed w-100 z-1"
         style={{ backgroundColor: "white" }}
       >
-        <Link to="/user" className=" nav-link text-start pt-5 mt-4 pt-sm-0  mx-2">
+        <Link
+          to="/user"
+          className=" nav-link text-start pt-5 mt-4 pt-sm-0  mx-2"
+        >
           <BsArrowLeft />
           CheeseBurst
         </Link>
@@ -49,14 +52,14 @@ const CheeseBurst = () => {
               <PiPizzaBold />
               Pizza
             </li>
-            <li onClick={() => setMenu("sides")}>
+            <li onClick={() => setMenu("Garlic Bread")}>
               <GiSlicedBread />
               Garlic Breads
             </li>
           </ul>
         </section>
       </section>
-      <div className="pt-5"/>
+      <div className="pt-5" />
       <h5 className="menu-title mt-5 pt-5 mt-sm-4 pt-sm-0 ">
         <div />
         <span>CheeseBurst</span>

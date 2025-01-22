@@ -98,7 +98,7 @@ const OrderHistory = () => {
     <div>
       <div className="mt-4 pt-4">
         <Link className="nav-link" to="/user">
-          <h5 className="text-start mx-1 mt-5">
+          <h5 className="text-start mx-1 mt-3 mt-sm-1">
             <BsArrowLeft />
             Order History
           </h5>

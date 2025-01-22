@@ -110,7 +110,11 @@
   
   @media (max-width: 475px) {
     .menu {
-      font-size: 8px;
+      font-size: 12px;
+    }
+    .menu-top {
+      height: 15vh;
+      background-color: white;
     }
   }
   

@@ -17,12 +17,12 @@ const Footer = () => {
             Menu
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link className="nav-link">
             <BsGeoAltFill />
             Pondicherry
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link className="nav-link" to="/user/cheeseburst">
             <PiPizzaBold />

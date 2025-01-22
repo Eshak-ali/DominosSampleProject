@@ -158,13 +158,13 @@ const AddCart = () => {
 
   return (
     <div className="container-sm py-5 px-0">
-      <h1 className="text-center  mt-5 mt-sm-0">
+      <h5 className="text-start mx-2  mt-4 mt-sm-0">
         Your order
         <span className="text-warning">
           <PiPizzaDuotone />
         </span>
-      </h1>
-      <div className="order-type mx-3">
+      </h5>
+      <div className="order-type mx-3 mt-2">
         {location !== null &&
         location !== "Dine-in" &&
         location !== "Takeaway" ? (

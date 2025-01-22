@@ -99,19 +99,19 @@ const AdminNavbar = () => {
               <Link to="/admin/add" className="nav-link">
                 <li>
                   Add Items
-                  <span className="d-md-none" ></span>
+                  <span className="d-md-none"></span>
                 </li>
               </Link>
               <Link to="/admin" className="nav-link">
                 <li>
                   List Items
-                  <span className="d-md-none" ></span>
+                  <span className="d-md-none"></span>
                 </li>
               </Link>
               <Link to="/admin/order" className="nav-link">
                 <li>
                   Order Details
-                  <span className="d-md-none" ></span>
+                  <span className="d-md-none"></span>
                 </li>
               </Link>
             </ul>

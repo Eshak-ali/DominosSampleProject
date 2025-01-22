@@ -247,7 +247,7 @@ const AddCart = () => {
           </>
         )}
       </div>
-      <h4>Complete Your Meal</h4>
+      <h4 className="mt-4">Complete Your Meal</h4>
       <br />
       <div className="complete-order">
         {randompizza.map((each) => (

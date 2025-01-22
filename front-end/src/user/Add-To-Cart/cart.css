@@ -63,11 +63,14 @@
 }
 
 .pizza-complete img {
-  width: 80%;
+  width: 100%;
   height: 100%;
   border-radius: 10px;
 }
 
+.pizza-complete button {
+  font-size: 12px !important;
+}
 .pizza-name-order {
   position: absolute;
   bottom: 2%;

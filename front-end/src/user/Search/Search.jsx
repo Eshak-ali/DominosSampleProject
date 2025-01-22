@@ -23,7 +23,7 @@ const Search = () => {
     const value = each.target.value;
     setSearch(value);
     const filter = pizza.filter((each) =>
-      each.name.toLowerCase().includes(value)
+      each.name.toLowerCase().includes(value).toLowerCase()
     );
     setItem(filter);
     console.log(item);

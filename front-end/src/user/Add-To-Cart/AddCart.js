@@ -164,7 +164,7 @@ const AddCart = () => {
           <PiPizzaDuotone />
         </span>
       </h5>
-      <div className="order-type mx-3 mt-2">
+      <div className="order-type mx-3 mt-5">
         {location !== null &&
         location !== "Dine-in" &&
         location !== "Takeaway" ? (
@@ -206,7 +206,7 @@ const AddCart = () => {
         ) : (
           <>
             {order.items?.map((each) => (
-              <div className="product col-12 text-center mt-3" key={each.id}>
+              <div className="product col-12 text-center mt-4 mx-2" key={each.id}>
                 <section className="col-5 col-md-3 product-name">
                   <img
                     className="mx-2 d-none d-md-block"
@@ -240,7 +240,7 @@ const AddCart = () => {
               </div>
             ))}
             <hr />
-            <div className="text-end total-price mt-4 gap-4 gap-md-2">
+            <div className="text-end total-price mt-5 gap-4 gap-md-2">
               <span>
                 <Link to="/user/menu" className="text-dark nav-link">
                   Add more Items....
@@ -253,7 +253,7 @@ const AddCart = () => {
           </>
         )}
       </div>
-      <h4 className="mt-4">Complete Your Meal</h4>
+      <h4 className="mt-5">Complete Your Meal</h4>
       <br />
       <div className="complete-order">
         {randompizza.map((each) => (
@@ -285,7 +285,7 @@ const AddCart = () => {
           </div>
         ))}
       </div>
-      <section className="text-end my-5 cart-btn">
+      <section className="text-end my-5 cart-btn mx-2">
         <button
           className="btn btn-danger"
           onClick={() => dispatch(clearCart())}

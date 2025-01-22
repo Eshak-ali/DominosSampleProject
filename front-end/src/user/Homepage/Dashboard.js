@@ -230,7 +230,7 @@ const Dashboard = () => {
               </div>
             </div>
             <button
-              class="carousel-control-prev d-none"
+              class="carousel-control-prev opacity-0"
               type="button"
               data-bs-target="#carouselExample"
               data-bs-slide="prev"
@@ -242,7 +242,7 @@ const Dashboard = () => {
               <span class="visually-hidden">Previous</span>
             </button>
             <button
-              class="carousel-control-next d-none"
+              class="carousel-control-next opacity-0"
               type="button"
               data-bs-target="#carouselExample"
               data-bs-slide="next"

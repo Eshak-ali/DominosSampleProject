@@ -207,7 +207,7 @@ const Dashboard = () => {
             id="carouselExample"
             class="carousel slide"
             data-bs-ride="carousel"
-            data-bs-interval="2000"
+            data-bs-interval="1000"
           >
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -229,7 +229,7 @@ const Dashboard = () => {
           </div>
         </section>
         <button
-          class="carousel-control-prev visually-hidden"
+          class="carousel-control-prev "
           type="button"
           data-bs-target="#carouselExample"
           data-bs-slide="prev"
@@ -238,7 +238,7 @@ const Dashboard = () => {
           <span class="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next visually-hidden"
+          class="carousel-control-next"
           type="button"
           data-bs-target="#carouselExample"
           data-bs-slide="next"

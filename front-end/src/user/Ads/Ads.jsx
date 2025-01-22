@@ -11,7 +11,7 @@ const Ads = () => {
         id="videoCarousel"
         className="carousel slide mt-3"
         data-bs-ride="carousel"
-        data-bs-interval="25000" // Automatically moves to the next slide after 25 seconds
+        data-bs-interval="10000" // Automatically moves to the next slide after 25 seconds
       >
         <div className="carousel-inner video">
           {videos.map((video, index) => (
@@ -33,7 +33,7 @@ const Ads = () => {
           ))}
         </div>
         <button
-          class="carousel-control-prev visually-hidden"
+          class="carousel-control-prev "
           type="button"
           data-bs-target="#videoCarousel"
           data-bs-slide="prev"
@@ -42,7 +42,7 @@ const Ads = () => {
           <span class="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next visually-hidden"
+          class="carousel-control-next "
           type="button"
           data-bs-target="#videoCarousel"
           data-bs-slide="next"

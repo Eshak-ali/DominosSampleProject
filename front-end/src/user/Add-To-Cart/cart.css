@@ -32,7 +32,9 @@
   border-radius: 15px;
   border: 1px solid black;
   padding: 1px;
-  width: 10vw !important;
+  width: 15vw !important;
+  background-color: grey;
+  color: lightyellow;
 }
 
 .cart-btn {

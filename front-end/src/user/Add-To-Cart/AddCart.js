@@ -209,13 +209,13 @@ const AddCart = () => {
                     alt={each.name}
                   />
                   <img
-                    className=" d-block d-md-none"
+                    className=" d-block d-md-none w-25"
                     src={each.type === "Veg" ? Veg : Nonveg}
                   />
-                  <p className="m-0 fs-5">{each.name}</p>
+                  <span className="m-0 fs-5">{each.name}</span>
                 </section>
                 <section className="col-2 col-md-3">
-                  <h5>{each.price}</h5>
+                  <span>{each.price}</span>
                 </section>
                 <section className="col-3 col-md-3 quantity">
                   <button
@@ -279,7 +279,7 @@ const AddCart = () => {
           </div>
         ))}
       </div>
-      <section className="text-end mt-5 cart-btn">
+      <section className="text-end my-5 cart-btn">
         <button
           className="btn btn-danger"
           onClick={() => dispatch(clearCart())}
@@ -308,7 +308,7 @@ const AddCart = () => {
         )}
       </section>
       <Link to="/user/track">
-        <span className="text-end mt-2">
+        <span className="text-end">
           {" "}
           Track order...
           <BsGeoAltFill />

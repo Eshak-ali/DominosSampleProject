@@ -59,8 +59,8 @@ const Dashboard = () => {
 
   return (
     <div className=" dashboard">
-      <div className="col-11  col-md-6  d-md-flex mx-auto mt-5 pt-3">
-        <div className="list col-12 mt-5 ">
+      <div className="col-11  col-md-6  d-md-flex mx-auto mt-5">
+        <div className="list col-12 mt-5">
           <span>
             <GrLocation />
             Pondicherry

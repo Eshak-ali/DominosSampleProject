@@ -89,8 +89,7 @@ const AdminNavbar = () => {
         </div>
         <div class="offcanvas-body">
           <section
-            className="col-5 col-sm-5 sidebar d-none d-md-flex"
-            id="sidebar"
+            className="sidebar d-none d-md-flex"
           >
             <h2>
               <BsPersonBadge />

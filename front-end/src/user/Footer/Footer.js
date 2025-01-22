@@ -9,8 +9,8 @@ import { IoIosArrowForward } from "react-icons/io";
 const Footer = () => {
   const cartItem = useSelector(selectallorder);
   return (
-    <div className="col-12 footer p-3">
-      <ul className="footer-list nav p-0">
+    <div className="col-12 footer ">
+      <ul className="footer-list nav p-3">
         <li>
           <Link to="/user/menu/pizza" className="nav-link">
             <BsMenuUp />

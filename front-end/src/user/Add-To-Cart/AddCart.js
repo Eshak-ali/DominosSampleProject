@@ -212,7 +212,7 @@ const AddCart = () => {
                     className=" d-block d-md-none"
                     src={each.type === "Veg" ? Veg : Nonveg}
                   />
-                  <p className="m-0">{each.name}</p>
+                  <p className="m-0 fs-5">{each.name}</p>
                 </section>
                 <section className="col-2 col-md-3">
                   <h5>{each.price}</h5>
@@ -230,7 +230,7 @@ const AddCart = () => {
                   </button>
                 </section>
                 <section className="col-2 col-md-3">
-                  <h5>{each.totalPrice}</h5>
+                  <span>{each.totalPrice}</span>
                 </section>
               </div>
             ))}
@@ -241,7 +241,7 @@ const AddCart = () => {
                 </Link>
               </span>
               <h5></h5>
-              <h2>Total_Price</h2>
+              <h4>Total_Price</h4>
               <h3>{order.totalprice}</h3>
             </div>
           </>
@@ -308,7 +308,7 @@ const AddCart = () => {
         )}
       </section>
       <Link to="/user/track">
-        <span className="text-end">
+        <span className="text-end mt-2">
           {" "}
           Track order...
           <BsGeoAltFill />

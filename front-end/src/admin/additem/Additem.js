@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./AddItem.css";
 import axios from "axios";
 import AddList from "./AddList";
@@ -28,6 +28,9 @@ const AddIitem = () => {
     handlemenu();
     handlebase();
   }, []);
+
+  const imageref = useRef(null);
+  const selectref = useRef(null);
 
   const handleCategory = async () => {
     const res = await axios.get(`${process.env.REACT_APP_API}/pizza/category`);
@@ -118,6 +121,8 @@ const AddIitem = () => {
           description: "",
           imageUrl: "",
         });
+        imageref.current.value = null;
+        selectref.current.value = "";
         dispatch(deleteItem());
       }
     } catch (error) {
@@ -163,7 +168,12 @@ const AddIitem = () => {
           </section>
           <section className="col-12 col-lg-4 input-field">
             <label className=" mx-md-2">Size </label>
-            <select onChange={sizechange} name="size" className="mx-4">
+            <select
+              onChange={sizechange}
+              ref={selectref}
+              name="size"
+              className="mx-4"
+            >
               <option value="">Select Size</option>
               {size.map((each) => (
                 <option key={each} value={each}>
@@ -176,7 +186,7 @@ const AddIitem = () => {
         <div className="row my-5 g-5 g-lg-0">
           <section className="col-12 col-lg-4 input-field">
             <label>Category</label>
-            <select onChange={categorychange} name="category">
+            <select onChange={categorychange} ref={selectref} name="category">
               <option value="">Select category</option>
               {category.map((each) => (
                 <option key={each} value={each}>
@@ -191,7 +201,7 @@ const AddIitem = () => {
           <section className="col-12 col-lg-4 input-field">
             <section className="col-12 col-lg-4 input-field">
               <label className="my-3 mx-2">base</label>
-              <select onChange={basechange} name="size">
+              <select onChange={basechange} ref={selectref} name="size">
                 <option value="">Select base</option>
                 {base.map((each) => (
                   <option key={each} value={each}>
@@ -208,7 +218,7 @@ const AddIitem = () => {
         <div className="row">
           <section className="col-12 col-lg-4 input-field">
             <label className="my-3">Menu</label>
-            <select onChange={menuchange} name="size">
+            <select onChange={menuchange} ref={selectref} name="size">
               <option value="">Select Item</option>
               {menu.map((each) => (
                 <option key={each} value={each}>
@@ -235,6 +245,7 @@ const AddIitem = () => {
               className="text-primary"
               onChange={(e) => handlefile(e)}
               id="pizza-img"
+              ref={imageref}
             />
           </section>
         </div>

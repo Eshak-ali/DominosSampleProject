@@ -31,7 +31,7 @@ const Menu = () => {
       <div className="z-1 position-fixed w-100 menu-top pt-4">
         <div className="menu-category">
           <section className="text-start d-flex justify-content-between mx-2">
-            <Link to="/user" className="fw-bold nav-link  mt-md-1 mx-3 ">
+            <Link to="/user" className="fw-bold nav-link  mt-md-1 mx-1 ">
               <BsArrowLeft />
               Dumino's Menu
             </Link>

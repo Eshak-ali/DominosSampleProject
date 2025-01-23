@@ -20,13 +20,15 @@ const Search = () => {
   }, []);
 
   const handlesearch = (each) => {
-    const value = each.target.value;
+    const value = each.target.value.toLowerCase();
     setSearch(value);
+
     const filter = pizza.filter((each) =>
-      each.name.toLowerCase().includes(value).toLowerCase()
+      each.name.toLowerCase().includes(value)
     );
+
     setItem(filter);
-    console.log(item);
+    console.log(filter);
   };
 
   return (

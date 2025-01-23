@@ -12,7 +12,7 @@ const AdminNavbar = () => {
       <section className="col-12 navbar bg-primary">
         <h3 className="Brand text-center">
           <img src={logo} alt="logo" />
-          DUmino's Pizza
+          Domino's Pizza
         </h3>
         <h2
           className="d-md-none"
@@ -30,7 +30,7 @@ const AdminNavbar = () => {
         </Link>
       </section>
       <div className=" row  p-0 m-0 dashboard">
-        <section className="col-5  sidebar d-none d-md-flex">
+        <section className="col-2  sidebar d-none d-md-flex">
           <h2>
             <BsPersonBadge />
             Admin
@@ -39,19 +39,19 @@ const AdminNavbar = () => {
             <Link to="/admin/add" className="nav-link">
               <li>
                 Add Items
-                <span className="d-md-none" ></span>
+                <span className="d-md-none"></span>
               </li>
             </Link>
             <Link to="/admin" className="nav-link">
               <li>
                 List Items
-                <span className="d-md-none" ></span>
+                <span className="d-md-none"></span>
               </li>
             </Link>
             <Link to="/admin/order" className="nav-link">
               <li>
                 Order Details
-                <span className="d-md-none" ></span>
+                <span className="d-md-none"></span>
               </li>
             </Link>
           </ul>
@@ -70,16 +70,17 @@ const AdminNavbar = () => {
         </section>
       </div>
       <div
-        class="offcanvas offcanvas-start"
+        class="offcanvas offcanvas-start bg-primary"
         data-bs-backdrop="static"
         tabindex="-1"
         id="staticBackdrop"
         aria-labelledby="staticBackdropLabel"
       >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="staticBackdropLabel">
-            Offcanvas
-          </h5>
+        <div class="offcanvas-header text-light">
+          <h2 class="offcanvas-title" id="staticBackdropLabel">
+            <BsPersonBadge />
+            Admin
+          </h2>
           <button
             type="button"
             class="btn-close"
@@ -88,35 +89,33 @@ const AdminNavbar = () => {
           ></button>
         </div>
         <div class="offcanvas-body">
-          <section
-            className="sidebar d-none d-md-flex"
-          >
-            <h2>
-              <BsPersonBadge />
-              Admin
-            </h2>
-            <ul className="navbar-nav">
+          <section className="sidebars">
+            <ul className="navbar-nav gap-5">
               <Link to="/admin/add" className="nav-link">
-                <li>
+                <li data-bs-dismiss="offcanvas">
                   Add Items
                   <span className="d-md-none"></span>
                 </li>
               </Link>
               <Link to="/admin" className="nav-link">
-                <li>
+                <li data-bs-dismiss="offcanvas">
                   List Items
                   <span className="d-md-none"></span>
                 </li>
               </Link>
               <Link to="/admin/order" className="nav-link">
-                <li>
+                <li data-bs-dismiss="offcanvas">
                   Order Details
                   <span className="d-md-none"></span>
                 </li>
               </Link>
             </ul>
             <div>
-              <button className="btn btn-danger"  id="log">
+              <button
+                className="btn btn-danger w-100 d-flex align-items-center gap-2"
+                id="log"
+                data-bs-dismiss="offcanvas"
+              >
                 <Link to="/" className="nav-link">
                   Logout
                 </Link>

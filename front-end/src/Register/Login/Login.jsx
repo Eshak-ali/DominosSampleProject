@@ -118,7 +118,7 @@ const Login = () => {
         <section className="container">
           <h3 className="text-info text-start Brand">
             <img src={logo} alt="logo" />
-            DUmino's Pizza
+            Domino's Pizza
           </h3>
           <h4>Login to unloack awesome benefits</h4>
 

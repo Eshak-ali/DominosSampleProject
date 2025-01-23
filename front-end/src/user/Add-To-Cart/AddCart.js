@@ -18,7 +18,7 @@ import Veg from "../../images/veg.jpg";
 import Nonveg from "../../images/nonveg.jpg";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { BsDash, BsGeoAltFill, BsGraphDownArrow, BsPlus } from "react-icons/bs";
+import { BsArrowLeft, BsDash, BsGeoAltFill, BsGraphDownArrow, BsPlus } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import { selectpizza } from "../../app/features/pizza/pizza";
@@ -159,6 +159,9 @@ const AddCart = () => {
   return (
     <div className="container-sm py-5 px-0">
       <h5 className="text-start mx-2  mt-4 mt-sm-0">
+        <Link to="/user">
+          <BsArrowLeft />
+        </Link>{" "}
         Your order
         <span className="text-warning">
           <PiPizzaDuotone />
@@ -257,7 +260,7 @@ const AddCart = () => {
           </>
         )}
       </div>
-      <h4 className="mt-5 mx-2">Complete Your Meal</h4>
+      <h4 className="mt-5">Complete Your Meal</h4>
       <br />
       <div className="complete-order">
         {randompizza.map((each) => (

@@ -1,64 +1,82 @@
 .navbar {
-    background-color: lightblue;
-    height: 10vh;
-    box-shadow: inset 1px 5px 25px black;
-    display: flex;
-    align-items: center;
-    color: lightblue;
-  }
-  
-  .Brand img {
-    width: 60px;
-  
-  }
-  .sidebar {
-    color: white;
-    background-color: rgb(29, 137, 246);
-    min-height: 90vh;
-    box-shadow: inset 1px 1px 10px rgb(6, 7, 44);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 0.2px;
-    padding: 10px;
-  }
-  
-  .sidebar h2 {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    color: lightblue;
-  }
-  
-  .sidebar ul {
-    display: flex;
-    align-items: flex-start;
-    gap: 100px;
-  }
-  
-  .sidebar ul li {
-    box-shadow: inset 1px 2px 2px 0.2px black;
-    padding: 10px;
-    border-radius: 10px;
-    transition: all 0.2s linear;
-  }
-  
-  .sidebar ul li:hover {
-    background-color: skyblue;
-    cursor: pointer;
-    box-shadow: 1px 2px 2px 0.2px black;
-  }
-  
-  /* .sidebar-mobile {
+  background-color: lightblue;
+  height: 10vh;
+  box-shadow: inset 1px 5px 25px black;
+  display: flex;
+  align-items: center;
+  color: lightblue;
+}
+
+.Brand img {
+  width: 60px;
+}
+.sidebar {
+  color: white;
+  background-color: rgb(29, 137, 246);
+  min-height: 90vh;
+  box-shadow: inset 1px 1px 10px rgb(6, 7, 44);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.2px;
+  padding: 10px;
+}
+
+.sidebars {
+  color: white;
+  background-color: rgb(29, 137, 246);
+  min-height: 90vh;
+  box-shadow: inset 1px 1px 10px rgb(6, 7, 44);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0.2px;
+  padding: 10px;
+}
+
+.sidebar h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: lightblue;
+}
+
+.sidebar ul {
+  display: flex;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+.sidebar ul li {
+  box-shadow: inset 1px 2px 2px 0.2px black;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+}
+
+.sidebars ul li {
+  box-shadow: inset 1px 2px 2px 0.2px black;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+}
+
+.sidebar ul li:hover {
+  background-color: skyblue;
+  cursor: pointer;
+  box-shadow: 1px 2px 2px 0.2px black;
+}
+
+/* .sidebar-mobile {
     position: absolute;
     z-index: 2;
     min-height: 100vh;
   } */
-  .content {
-    background-image: url("../images/backgorund/admin.jpg");
-    min-width: 60vw;
-    background-size: cover;
-    background-position: center;
-  }
-  
+.content {
+  background-image: url("../images/backgorund/admin.jpg");
+  min-width: 60vw;
+  background-size: cover;
+  background-position: center;
+}

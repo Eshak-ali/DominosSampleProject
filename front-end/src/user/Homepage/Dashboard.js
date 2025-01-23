@@ -81,7 +81,7 @@ const Dashboard = () => {
           </Link>
         </div>
       </div>
-      <ul className="place-tab">
+      <ul className="place-tab p-0 mx-3">
         <li
           style={{
             backgroundColor:
@@ -284,24 +284,24 @@ const Dashboard = () => {
           <div>
             <ul className="menu-item mt-4">
               <Link className="nav-link" to="/user">
-                <li>
+                <li data-bs-dismiss="offcanvas">
                   <BsCreditCard2Front />
                   Dashboard
                 </li>
               </Link>
               <Link className="nav-link" to="/user/menu">
-                <li>
+                <li data-bs-dismiss="offcanvas">
                   <BsReceiptCutoff />
                   Menu
                 </li>
               </Link>
               <Link className="nav-link" to="/user/cheeseburst">
-                <li>
+                <li data-bs-dismiss="offcanvas">
                   <PiPizzaFill />
                   cheeseburst
                 </li>
               </Link>
-              <li>
+              <li data-bs-dismiss="offcanvas">
                 <BsGeoAltFill />
                 Pondicherry
               </li>
@@ -311,20 +311,20 @@ const Dashboard = () => {
           <div>
             <ul className="menu-item mt-2">
               <Link className="nav-link" to="/user/track">
-                <li>
+                <li data-bs-dismiss="offcanvas">
                   <BsGeo />
                   Track Order
                 </li>
               </Link>
               <Link className="nav-link" to="/user/history">
-                <li>
+                <li data-bs-dismiss="offcanvas">
                   <GiFullPizza />
                   Order History
                 </li>
               </Link>
               <Link className="nav-link" to="/user/cart">
                 {" "}
-                <li>
+                <li data-bs-dismiss="offcanvas">
                   <GiCartwheel />
                   Cart_____
                   <BsCart4 />
@@ -333,7 +333,7 @@ const Dashboard = () => {
             </ul>
             <hr />
           </div>
-          <section className="logout">
+          <section className="logout" data-bs-dismiss="offcanvas">
             <Link
               to="/"
               className="nav-link bg-danger p-2 text-light rounded-2"

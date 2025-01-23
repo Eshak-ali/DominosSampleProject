@@ -29,30 +29,21 @@ const AdminNavbar = () => {
           </button>
         </Link>
       </section>
-      <div className=" row  p-0 m-0 dashboard">
-        <section className="col-2  sidebar d-none d-md-flex">
+      <div className="row p-0 m-0 dashboard">
+        <section className="col-2 sidebar d-none d-md-flex">
           <h2>
             <BsPersonBadge />
             Admin
           </h2>
           <ul className="navbar-nav">
             <Link to="/admin/add" className="nav-link">
-              <li>
-                Add Items
-                <span className="d-md-none"></span>
-              </li>
+              <li>Add Items</li>
             </Link>
             <Link to="/admin" className="nav-link">
-              <li>
-                List Items
-                <span className="d-md-none"></span>
-              </li>
+              <li>List Items</li>
             </Link>
             <Link to="/admin/order" className="nav-link">
-              <li>
-                Order Details
-                <span className="d-md-none"></span>
-              </li>
+              <li>Order Details</li>
             </Link>
           </ul>
           <div>
@@ -70,44 +61,35 @@ const AdminNavbar = () => {
         </section>
       </div>
       <div
-        class="offcanvas offcanvas-start bg-primary"
+        className="offcanvas offcanvas-start bg-primary"
         data-bs-backdrop="static"
-        tabindex="-1"
+        tabIndex="-1"
         id="staticBackdrop"
         aria-labelledby="staticBackdropLabel"
       >
-        <div class="offcanvas-header text-light">
-          <h2 class="offcanvas-title" id="staticBackdropLabel">
+        <div className="offcanvas-header text-light">
+          <h2 className="offcanvas-title" id="staticBackdropLabel">
             <BsPersonBadge />
             Admin
           </h2>
           <button
             type="button"
-            class="btn-close"
+            className="btn-close"
             data-bs-dismiss="offcanvas"
             aria-label="Close"
           ></button>
         </div>
-        <div class="offcanvas-body">
+        <div className="offcanvas-body">
           <section className="sidebars">
             <ul className="navbar-nav gap-5">
               <Link to="/admin/add" className="nav-link">
-                <li data-bs-dismiss="offcanvas">
-                  Add Items
-                  <span className="d-md-none"></span>
-                </li>
+                <li data-bs-dismiss="offcanvas">Add Items</li>
               </Link>
               <Link to="/admin" className="nav-link">
-                <li data-bs-dismiss="offcanvas">
-                  List Items
-                  <span className="d-md-none"></span>
-                </li>
+                <li data-bs-dismiss="offcanvas">List Items</li>
               </Link>
               <Link to="/admin/order" className="nav-link">
-                <li data-bs-dismiss="offcanvas">
-                  Order Details
-                  <span className="d-md-none"></span>
-                </li>
+                <li data-bs-dismiss="offcanvas">Order Details</li>
               </Link>
             </ul>
             <div>

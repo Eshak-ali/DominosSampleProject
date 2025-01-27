@@ -99,6 +99,7 @@ const Login = () => {
   };
   return (
     <div className="login">
+      <p>Admin:9999999999,Admin,1511</p>
       <section className="login-box mt-md-5 ">
         <section>
           <Link to="/user" className="nav-link">

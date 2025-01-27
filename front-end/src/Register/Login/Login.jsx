@@ -99,9 +99,10 @@ const Login = () => {
   };
   return (
     <div className="login">
-      <p>Admin:9999999999,Admin,1511</p>
+     
       <section className="login-box mt-md-5 ">
         <section>
+        <p>Admin:9999999999,Admin,1511</p>
           <Link to="/user" className="nav-link">
             <p
               className="text-primary text-end mx-5 mt-2"

@@ -105,7 +105,9 @@ const OrderDetails = () => {
           data-bs-target="#exampleModal"
           onClick={() => setOrderDetails((prev) => ({ ...prev, _id: row._id }))}
           disabled={
-            row.status === "cancelled" || row.status === "delivered" || user === null
+            row.status === "cancelled" ||
+            row.status === "delivered" ||
+            user === null
               ? true
               : false
           }
@@ -128,7 +130,6 @@ const OrderDetails = () => {
       );
       setData(filter);
     }
-
     handleuser();
   }, [order]);
 
